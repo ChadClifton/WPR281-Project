@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../SearchBar/SearchBar.css">
+    <script src="../SearchBar/SearchBar.js" defer></script>
+    <link rel="stylesheet" href="../Carousel/style.css">
+    <title>Course Finder</title>
+</head>
+<body id="bodyContainer">
+    <header id="headerContainer">
+        <h1>Belgium Campus</h1>
+    </header>
+
+    <div id="motto">
+        It's the way we're wired
+    </div>
+
+    <nav class="navbar" >
+        <ul class="nav-links" id="list">
+            <li><a href="#" class="nav-item">Home</a></li>
+            <li><a href="../courseList/courseList.html" class="nav-item">Course List</a></li>
+        </ul>
+        <form class="search-form" id="searchForm">
+            <input type="text" placeholder="Search..." class="search-input" id="searchInput">
+            <button type="submit" class="search-button">Enter</button>
+            <section class="autocomplete-items" id="autocomplete-items"></section>
+        </form>
+    </nav>
+
+    <main class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <article id="slide-1" class="slide" data-course-code="BDAIR" data-lecturer="Themba" data-duration="3 Years" data-start-date="01-Nov-2024" data-venue="Alpha">
+                    <div class="info">
+                        <a href="../CourseInfo/BachelorsInArtificialIntelligenceAndRobotics.html"><h2>Bachelors in Artificial Intelligence and Robotics</h2></a>
+                        <p>Explore the cutting-edge world of AI and robotics with our bachelor's program.</p>
+                        <button class="learn-more">More Information</button>
+                        <div class="course-details"></div>
+                    </div>
+                </article>
+                <article id="slide-2" class="slide" data-course-code="CAI" data-lecturer="Melary" data-duration="2 Years" data-start-date="01-Sept-2024" data-venue="Gamma">
+                    <div class="info">
+                        <a href="../CourseInfo/CertificateInArtificialIntelligence.html"><h2>Certificate in Artificial Intelligence</h2></a>
+                        <p>Gain foundational knowledge in AI with our certificate course.</p>
+                        <button class="learn-more">More Information</button>
+                        <div class="course-details"></div>
+                    </div>
+                </article>
+                <article id="slide-3" class="slide" data-course-code="MLDS" data-lecturer="Joshua" data-duration="1 Years" data-start-date="01-Oct-2024" data-venue="Delta">
+                    <div class="info">
+                        <a href="../CourseInfo/DiplomaInMachineLearningAndDataScience.html"><h2>Diploma in Machine Learning and Data Science</h2></a>
+                        <p>Learn the skills to analyze and interpret complex data with our diploma program.</p>
+                        <button class="learn-more">More Information</button>
+                        <div class="course-details"></div>
+                    </div>
+                </article>
+                <article id="slide-4" class="slide" data-course-code="ML" data-lecturer="Chad" data-duration="2.5 Years" data-start-date="01-Dec-2024" data-venue="Sigma">
+                    <div class="info">
+                        <a href="../CourseInfo/HonorsInMachineLearning.html"><h2>Honors in Machine Learning</h2></a>
+                        <p>Advance your knowledge with our honors program in machine learning.</p>
+                        <button class="learn-more">More Information</button>
+                        <div class="course-details"></div>
+                    </div>
+                </article>
+                <article id="slide-5" class="slide" data-course-code="AI301" data-lecturer="Thapelo" data-duration="2 Years" data-start-date="01-Jan-2025" data-venue="Epsilon">
+                    <div class="info">
+                        <a href="../CourseInfo/MastersInArtificialIntelligence.html"><h2>Masters in Artificial Intelligence</h2></a>
+                        <p>Master the art of AI with our comprehensive master's program.</p>
+                        <button class="learn-more">More Information</button>
+                        <div class="course-details"></div>
+                    </div>
+                </article>
+                <article id="slide-6" class="slide" data-course-code="DSAI" data-lecturer="Smit" data-duration="1.5 Years" data-start-date="01-Feb-2025" data-venue="phi">
+                    <div class="info">
+                        <a href="../CourseInfo/PostgradDiplomaInDataScienceAndArtificialIntelligence.html"><h2>Postgrad Diploma in Data Science and Artificial Intelligence</h2></a>
+                        <p>Enhance your skills with our postgraduate diploma in data science and AI.</p>
+                        <button class="learn-more">More Information</button>
+                        <div class="course-details"></div>
+                    </div>
+                </article>
+            </div>
+            <div class="slider-arrows">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footerContainer">
+    </footer>
+</body>
+<script src="nav.js"></script>
+<script src="../Carousel/script.js"></script>
+</html>

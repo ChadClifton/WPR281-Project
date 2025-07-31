@@ -1,0 +1,211 @@
+body {
+    background-color: #f8fafc;
+}
+
+/* Container padding */
+.container {
+    padding: 2rem;
+}
+
+/* Slider wrapper positioning and sizing */
+.slider-wrapper {
+    position: relative;
+    width: 50rem;
+    height: 16.328;
+    margin: 0;
+}
+
+/* Slider dimensions and overflow handling */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+
+/* Class slide styling */
+.slide {
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    box-sizing: border-box;
+    opacity: 0;
+    background-color: #496f91; 
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+
+/* Active slide visibility and opacity */
+.slide.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* Background images for each slide */
+#slide-1 {
+    background-image: url('../images/carousalBack.jpg');  
+    background-size: cover;
+}
+
+#slide-2 {
+    background-image: url('../images/carousalBack.jpg');  
+    background-size: cover;
+}
+
+#slide-3 {
+    background-image: url('../images/carousalBack.jpg');  
+    background-size: cover;
+}
+
+#slide-4 {
+    background-image: url('../images/carousalBack.jpg');  
+    background-size: cover;
+}
+
+#slide-5 {
+    background-image: url('../images/carousalBack.jpg'); 
+    background-size: cover; 
+}
+
+#slide-6 {
+    background-image: url('../images/carousalBack.jpg');  
+    background-size: cover;
+}
+
+
+.info {
+    padding: 1rem;
+    border-radius: 0.25rem;
+    width: 80%;
+    text-align: center;
+}
+
+/* Heading styling in info section */
+.info h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Paragraph styling in info section */
+.info p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Link styling in info section */
+.info a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #43739b;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Link hover effect */
+.info a:hover {
+    background-color: #43739b;
+}
+
+/* Slider arrows positioning and styling */
+.slider-arrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Button styling */
+button {
+    pointer-events: all;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.course-details {
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.learn-more{
+    font-size: small;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .slider-wrapper {
+        height: 15rem;
+        width: rem;
+    }
+
+    .info h2 {
+        font-size: 1rem;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+    }
+
+    .info a {
+        font-size: 0.9rem;
+    }
+
+    .course-details {
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 480px) {
+    .slider-wrapper {
+        height: 12rem;
+    }
+
+    .info h2 {
+        font-size: 0.9rem;
+    }
+
+    .info p {
+        font-size: 0.8rem;
+    }
+
+    .info a {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .course-details {
+        font-size: 0.7rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.6rem;
+    }
+}

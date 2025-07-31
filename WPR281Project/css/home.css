@@ -1,0 +1,245 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling for the main body */
+#bodyContainer {
+    display: grid;
+    max-width: 98%;
+    margin: 0;
+    padding: 20px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, minmax(100px, auto));
+    height: 100vh;
+
+    background: url('../images/background.PNG') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Header container styling */
+#headerContainer {
+    grid-row: 1;
+    grid-column: 1 / 11;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Header text styling */
+header {
+    font-size: 3em;
+    margin: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.5em 0.2em;
+}
+
+/* Motto text styling */
+#motto {
+    font-style: italic;
+    font-size: larger;
+}
+
+/* Navigation bar styling */
+.navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0.9rem;
+    padding: 0;
+}
+
+/* Navigation item styling */
+.nav-item {
+    font-size: 20px;
+    transition: color 0.3s, border-bottom 0.3s;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Hover and focus states for navigation items */
+.nav-item:hover, .nav-item:focus {
+    border-bottom: 1px solid black;
+    outline: none;
+    color: black;
+}
+
+/* Info container styling */
+#infoContainer {
+    grid-row: 2;
+    grid-column: 1 / 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main content container styling */
+#mainContainer {
+    width: 90%;
+    grid-row: 3;
+    grid-column: 1 / 11;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 1rem;
+}
+
+/* Content box styling */
+.content-box {
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 200px;
+
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for content boxes */
+.content-box:hover {
+    background-color: #2e86de;
+    border: 1px solid #2e86de;
+    color: black;
+}
+
+/* Anchor tag styling */
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Hover effect for anchor tags */
+a:hover {
+    color: rgb(255, 0, 0);
+    font-family: Arial, sans-serif;
+}
+
+/* Footer container styling */
+#footerContainer {
+    grid-row: 4;
+    grid-column: 1 / 11;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive styles for larger devices */
+@media (max-width: 1200px) {
+    header {
+        font-size: 2.5em;
+    }
+
+    .nav-item {
+        font-size: 18px;
+    }
+
+    .learn-more {
+        padding: 8px 16px;
+    }
+}
+
+/* Responsive styles for medium devices*/
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    header {
+        font-size: 1.5em;
+    }
+
+    .learn-more {
+        padding: 5px 10px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-input, .search-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .slider-wrapper {
+        width: 100%;
+    }
+
+    .slide {
+        min-width: 100%;
+    }
+
+    .slider-arrows {
+        display: none;
+    }
+}
+
+/* Responsive styles for small */
+@media (max-width: 576px) {
+    .navbar {
+        width: 100%;
+    }
+
+    header {
+        font-size: 1.2em;
+    }
+
+    .learn-more {
+        padding: 4px 8px;
+    }
+
+    #motto {
+        font-size: medium;
+    }
+
+    .info {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courseInfo.css">
+    <link rel="stylesheet" href="../SearchBar/SearchBar.css">    
+    <script src="../SearchBar/SearchBar.js" defer></script>
+    <title>Honors Degree in Machine Learning</title>
+</head>
+<body>
+
+    <header>
+        <h1>Honors Degree in Machine Learning</h1>
+        <p>Duration: 2.5 years</p>
+        <p>Code : ML</p>
+        <p>Lecturer : Chad</p>
+        <p id="bottom">Venue: Sigma</p>
+    </header>
+
+    <section id="navigationContainer">
+        <nav class="navbar" >
+            <ul class="nav-links" id="list">
+                <li><a href="../HomePage/home.html" class="nav-item">Home</a></li>
+                <li><a href="../courseList/courseList.html" class="nav-item">Course List</a></li>
+            </ul>
+            <form class="search-form" id="searchForm">
+                <input type="text" placeholder="Search..." class="search-input" id="searchInput">
+                <button type="submit" class="search-button">Enter</button>
+                <aside class="autocomplete-items" id="autocomplete-items"></aside>
+            </form>
+        </nav>
+    </section>
+    <section>
+        <h2 id="overview">Overview</h2>
+    </section>
+
+    <section id="main-section">
+        <h2>Modules</h2>
+        <article class="courseInfoContainer"></article>
+    
+        <article class="courseInfoContainer"></article>
+    
+        <article class="courseInfoContainer" ></article>
+    
+        <article class="courseInfoContainer"></article>
+    
+        <article class="courseInfoContainer"></article>
+    
+        <article class="courseInfoContainer"></article>
+    </section>
+
+    <article class="button-container">
+        <a href="../RegistrationForms/formCourse4.html" class="button enroll-button">Enroll for Course</a>
+        <input type="button" value="Print" onclick="window.print()" class="button print-button">
+        <a href = "WPR 281 Study Guide [2024] v1.4.pdf" class="button download-button">Download Study Guide</a>
+    <article/>
+</body>
+<script src="courseInfo.js"></script>
+<script src="../HomePage/nav.js" defer></script>
+</html>

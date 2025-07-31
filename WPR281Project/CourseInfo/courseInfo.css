@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3rem;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Header styles */
+header{
+    color: white;
+    text-align: center;
+    background-color: #4073a0;
+    background-image: url('../images/background.PNG');
+    background-size: cover;
+    padding-bottom: 1rem;
+}
+
+/* Removes gab between nav and header */
+#bottom{
+    margin-bottom: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#navigationContainer {
+    margin: 0;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 100%;
+    border-radius: 0px;
+    margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Hover and focus styles for navigation items */
+.nav-item:hover, .nav-item:focus {
+    color: #d7d5d5;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Button container styles */
+.button-container {
+    position: fixed;
+    bottom: 5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* Enroll button styles */
+.enroll-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: auto;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover styles for enroll and print buttons */
+.enroll-button:hover, .print-button:hover {
+    background-color: #0056b3;
+}
+
+/* Remove print buttons on print */
+@media print{
+    input[type="button"], #navigationContainer, .enroll-button, .button-container{
+        display: none;
+    }
+}
+
+/* Responsive styles for large screens*/
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-item {
+        font-size: 18px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+}
+
+/* Responsive styles for medium screens */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        gap: 15px;
+        align-items: center;
+    }
+
+    .nav-item {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-input {
+        width: calc(100% - 70px);
+        padding: 10px;
+    }
+
+    .search-button {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .button {
+        width:50%;
+        text-align: center;
+    }
+
+    .button-container {
+        position: relative;
+        bottom: 5px; 
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+    }
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 480px) {
+    header {
+        padding: 15px 5px;
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-item {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .search-input {
+        padding: 8px;
+    }
+
+    .search-button {
+        padding: 8px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .button {
+        width:50%;
+        text-align: center;
+    }
+
+    .button-container {
+        position: relative;
+        bottom: 5px; 
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+    }
+}
